@@ -2,96 +2,102 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About Me – Software Engineer</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      max-width: 800px;
-      margin: auto;
-      padding: 2rem;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.2rem;
-    }
-    header p {
-      font-size: 1.2rem;
-      color: #666;
-    }
-    section {
-      margin-bottom: 2rem;
-    }
-    h2 {
-      color: #005792;
-      border-bottom: 2px solid #eee;
-      padding-bottom: 0.3rem;
-      margin-bottom: 1rem;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    ul li::before {
-      content: "✔️ ";
-      color: #005792;
-    }
-    .footer {
-      text-align: center;
-      font-size: 0.9rem;
-      color: #999;
-      margin-top: 3rem;
-    }
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-      .container {
-        padding: 1rem;
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ali Mohammadi</title>
+  
+  <!-- css and js-->
+  <script src="script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <div class="container">
-    <header>
-      <h1>Hello, I'm a Software Engineer</h1>
-      <p>Backend-focused | Java & Python | Voice Assistance Enthusiast</p>
-    </header>
 
-    <section>
+    <div id="intro" class="sticky-intro">
+    <!-- Sticky Header + Resume Button -->
+      <div class="intro-content fade-in-section">
+        <header>
+          <h1>Hi, I'm a Software Engineer</h1>
+          <p>Currently building voice assistant systems at Semvox GmbH, Saarbrücken</p>
+        </header>
+        <div style="text-align: center;">
+          <a href="resume.pdf" class="resume-btn" download>
+            <i class="fas fa-file-download"></i> Download My Resume (PDF)
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Professional Summary -->
+    <section class="fade-in-section">
       <h2>👨‍💻 Professional Summary</h2>
-      <p>I’m a software engineer with 2+ years of experience specializing in Java and voice assistance-related frameworks. I also have experience in Python and enjoy building backend systems that power intuitive user experiences.</p>
+      <p>I'm a software engineer with 2+ years of experience specializing in Java and voice assistance technologies. I currently work at SemVox GmbH, designing intelligent, user-friendly voice assistant systems using in-house frameworks. I also have experience in Python and enjoy creating back-end services that are simple, scalable, and easy to maintain.</p>
     </section>
 
-    <section>
+    <!-- Skills Overview -->
+    <section class="fade-in-section">
       <h2>🛠️ Skills Overview</h2>
-      <ul>
-        <li>Backend development with Java and Python</li>
-        <li>Frameworks: Spring Boot, Flask (essential knowledge)</li>
-        <li>Voice assistance technologies & integrations</li>
-      </ul>
+      <div class="card-list">
+        <div class="card">
+          <h3>Languages</h3>
+          <ul>
+            <li>Java</li>
+            <li>Python</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Frameworks</h3>
+          <ul>
+            <li>Spring Boot</li>
+            <li>Flask</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Tools</h3>
+          <ul>
+            <li>Git</li>
+            <li>Docker (basic)</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <section>
+    <!-- Work -->
+    <section class="fade-in-section">
+      <h2>🏢 Work</h2>
+      <p>Currently working at SemVox GmbH in Saarbrücken<br>
+        designing voice assistant systems using the company’s proprietary framework and creating user-friendly experiences.</p>
+    </section>
+
+    <!-- Education -->
+    <section class="fade-in-section">
       <h2>🎓 Education</h2>
       <p>Bachelor of Science in Applied Science<br>
-         HTW Saar, Saarbrücken</p>
+        HTW Saar, Saarbrücken</p>
     </section>
 
-    <div class="footer">
-      <p>&copy; 2025 | Designed by Me :)</p>
-    </div>
+    <!-- Contact & Social -->
+    <section>
+      <h2>📬 Contact & Social</h2>
+      <div class="contact-links">
+        <a href="https://github.com/yourusername" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://linkedin.com/in/yourlinkedin" target="_blank">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="mailto:youremail@example.com">
+          <i class="fas fa-envelope"></i> Email
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      &copy; 2025 – Made with ❤️ in Saarbrücken
+    </footer>
+
   </div>
 </body>
 </html>
