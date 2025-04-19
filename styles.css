@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --card: #fff;
+  --bg: #f9f9fb;
+  --text: #1f1f1f;
+  --accent: #5561f0;
+}
+
+h1 {
+  font-size: 2rem;
+  color: var(--accent);
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: var(--accent);
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.sticky-intro p {
+  color: #666; /* Adjusted gray color, same as in mixed file */
+}
+
+.sticky-intro h1 {
+  font-size: 2.5rem; /* Larger than other sections (was 2rem) */
+}
+
+.sticky-intro p {
+  font-size: 1.3rem; /* Slightly larger gray text (was 1.2rem) */
+  color: #666; /* Ensures gray color remains */
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Sticky Intro */
+.sticky-intro {
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  z-index: 999;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.sticky-intro header {
+  text-align: center;
+}
+
+/* Resume Button */
+.resume-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: var(--accent);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.resume-btn:hover {
+  background-color: #4048d0;
+}
+
+/* Section Styles */
+section {
+  margin: 3rem 0;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Contact Links */
+.contact-links a {
+  display: inline-block;
+  margin: 0.5rem;
+  text-decoration: none;
+  color: var(--accent);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+}
+
+.contact-links i {
+  margin-right: 0.5rem;
+}
+
+/* Animation */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
+}
+
+.fade-in-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card {
+  flex: 1;
+  min-width: 220px;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+  font-size: 1.3rem; /* was 1.1rem, bumped up */
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card ul li {
+  padding: 0.3rem 0;
+  font-size: 1.1rem; /* increase from default */
+}
+
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #aaa;
+}
