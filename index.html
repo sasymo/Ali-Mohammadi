@@ -1,62 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ali Mohammadi</title>
-  
-  <!-- css and js-->
-  <script src="script.js" defer></script>
+
+  <!-- Fonts and Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+  <!-- Stylesheet and Script -->
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
   <div class="container">
 
     <div id="intro" class="sticky-intro">
-    <!-- Sticky Header + Resume Button -->
+      <!-- Sticky Header + Resume Button + Toggles -->
       <div class="intro-content fade-in-section">
+        <!-- Toggle Buttons Container -->
+        <div class="toggles">
+          <button id="theme-toggle" class="theme-toggle" title="Toggle dark mode">
+            <i class="fas fa-moon"></i>
+          </button>
+          <button id="lang-toggle" class="lang-toggle" title="Sprache wechseln / Switch language">
+            DE
+          </button>
+        </div>
+
         <header>
-          <h1>Hi, I'm a Software Engineer</h1>
-          <p>Currently building voice assistant systems at Semvox GmbH, Saarbrücken</p>
+          <h1 id="title-text">Hi, I'm a Software Engineer</h1>
+          <p id="intro-text">Currently building voice assistant systems at Semvox GmbH, Saarbrücken</p>
         </header>
+
         <div style="text-align: center;">
-          <a href="resume.pdf" class="resume-btn" download>
-            <i class="fas fa-file-download"></i> Download My Resume (PDF)
+          <a href="resume-en.pdf" class="resume-btn" download id="resume-link">
+            <i class="fas fa-file-download"></i> <span id="resume-text">Download My Resume (PDF)</span>
           </a>
         </div>
       </div>
     </div>
 
-    <!-- Professional Summary -->
+    <!-- Professional Summary Section -->
     <section class="fade-in-section">
-      <h2>👨‍💻 Professional Summary</h2>
-      <p>I'm a software engineer with 2+ years of experience specializing in Java and voice assistance technologies. I currently work at SemVox GmbH, designing intelligent, user-friendly voice assistant systems using in-house frameworks. I also have experience in Python and enjoy creating back-end services that are simple, scalable, and easy to maintain.</p>
+      <h2 id="professional-summary-title">👔 Professional Summary</h2>
+      <p id="professional-summary-text">
+      I'm a software engineer with 2+ years of experience specializing in Java and voice assistance technologies. I currently work at SemVox GmbH, 
+      designing intelligent, user-friendly voice assistant systems using in-house frameworks. I also have experience in Python and enjoy creating
+      back-end services that are simple, scalable, and easy to maintain.
+      </p>
     </section>
 
-    <!-- Skills Overview -->
+    <!-- Projects -->
     <section class="fade-in-section">
-      <h2>🛠️ Skills Overview</h2>
+      <h2 id="projects-summary-title">🏗️ Projects</h2>
+
+      <div class="project">
+        <h3 id="project1-title">SmartVoice IVI System</h3>
+        <p id="project1-text">
+          Led the development of a modular voice assistant for in-car infotainment systems at SemVox GmbH.
+          Designed custom interaction flows and integrated context-aware dialogue handling using in-house Java frameworks.
+        </p>
+      </div>
+
+      <br>
+      <div class="project">
+        <h3 id="project2-title">Personal Finance Assistant (Python, Flask)</h3>
+        <p id="project2-text">
+          Built a lightweight back-end service to track expenses and provide spending insights via voice commands.
+          Focused on clean API design, session handling, and deployment using Docker.
+        </p>
+      </div>
+
+      <br>
+      <div class="project">
+        <h3 id="project3-title">TaskFlow – Voice-Controlled To-Do App</h3>
+        <p id="project3-text">
+          Created a prototype app integrating a voice assistant with task management logic.
+          Users could add, update, and query tasks hands-free. Used Spring Boot and a custom command parser.
+        </p>
+      </div>
+
+      <br>
+      <div class="project">
+        <h3 id="project4-title">CI/CD Automation for Voice Assistant Testing</h3>
+        <p id="project4-text">
+          Automated the testing workflow for voice assistant components using GitHub Actions and Python test scripts.
+          Improved development speed and consistency across multiple project branches.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills Overview Section -->
+    <section class="fade-in-section">
+      <h2 id="skills-title">🛠️ Skills Overview</h2>
       <div class="card-list">
         <div class="card">
-          <h3>Languages</h3>
-          <ul>
+          <h3 id="languages-title">Languages</h3>
+          <ul id="languages-list">
             <li>Java</li>
             <li>Python</li>
           </ul>
         </div>
         <div class="card">
-          <h3>Frameworks</h3>
-          <ul>
+          <h3 id="frameworks-title">Frameworks</h3>
+          <ul id="frameworks-list">
             <li>Spring Boot</li>
             <li>Flask</li>
           </ul>
         </div>
         <div class="card">
-          <h3>Tools</h3>
-          <ul>
+          <h3 id="tools-title">Tools</h3>
+          <ul id="tools-list">
             <li>Git</li>
             <li>Docker (basic)</li>
           </ul>
@@ -64,40 +122,39 @@
       </div>
     </section>
 
-    <!-- Work -->
+    <!-- Work Section -->
     <section class="fade-in-section">
-      <h2>🏢 Work</h2>
-      <p>Currently working at SemVox GmbH in Saarbrücken<br>
+      <h2 id="work-title">💼 Work</h2>
+      <p id="work-text">Currently working at SemVox GmbH in Saarbrücken<br>
         designing voice assistant systems using the company’s proprietary framework and creating user-friendly experiences.</p>
     </section>
 
-    <!-- Education -->
+    <!-- Education Section -->
     <section class="fade-in-section">
-      <h2>🎓 Education</h2>
-      <p>Bachelor of Science in Applied Science<br>
-        HTW Saar, Saarbrücken</p>
+      <h2 id="education-title">🎓 Education</h2>
+      <p id="education-text">Bachelor of Science in Communication and Computer Science<br>HTW Saar, Saarbrücken</p>
     </section>
 
     <!-- Contact & Social -->
     <section>
-      <h2>📬 Contact & Social</h2>
+      <h2 id="contact-title">🔗 Contact & Social</h2>
       <div class="contact-links">
-        <a href="https://github.com/yourusername" target="_blank">
+        <a href="https://github.com/yourusername" target="_blank"id="github-link">
           <i class="fab fa-github"></i> GitHub
         </a>
-        <a href="https://linkedin.com/in/yourlinkedin" target="_blank">
+        <a href="https://linkedin.com/in/yourlinkedin" target="_blank" id="linkedin-link">
           <i class="fab fa-linkedin"></i> LinkedIn
         </a>
-        <a href="mailto:youremail@example.com">
+        <a href="mailto:youremail@example.com" id="email-link">
           <i class="fas fa-envelope"></i> Email
         </a>
       </div>
     </section>
 
-    <footer>
-      &copy; 2025 – Made with ❤️ in Saarbrücken
-    </footer>
+    <!-- Footer -->
+    <footer id="footer"></footer>
 
   </div>
 </body>
+
 </html>
