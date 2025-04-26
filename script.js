@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
       frameworks: "Frameworks",
       tools: "Tools",
       work: "💼 Work Experience",
-      workText: "Designing voice assistant systems using the company’s proprietary framework and creating user-friendly experiences.<br><strong>Semvox GmbH, Saarbrücken</strong><br><br>Working student developing microservices in Java.<br><strong>DHC Business Solutions, Saarbrücken</strong><br><br>Working student writing Java code for individual customer requirements.<br><strong>eurodata AG, Saarbrücken</strong>",
+      workText: "Designing voice assistant systems using the company’s proprietary framework.<br><strong>Semvox GmbH, Saarbrücken</strong><br><br>Working student developing microservices in Java.<br><strong>DHC Business Solutions, Saarbrücken</strong><br><br>Working student writing Java code for individual customer requirements.<br><strong>eurodata AG, Saarbrücken</strong>",
       education: "🎓 Education",
       educationText: "Bachelor of Science in Communication and Computer Science<br><strong>HTW Saar, Saarbrücken</strong><br><br>Master of Science in Artificial Intelligence<br><strong>University of Example, Berlin</strong>",
       languages: {
@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
       frameworks: "Frameworks",
       tools: "Werkzeuge",
       work: "💼 Berufserfahrung",
-      workText: "Entwicklung von Sprachassistenzsystemen mit dem firmeneigenen Framework und Gestaltung benutzerfreundlicher Erlebnisse.<br><strong>Semvox GmbH, Saarbrücken</strong><br><br>Werkstudent in der Entwicklung von Microservices mit Java.<br><strong>DHC Business Solutions, Saarbrücken</strong><br><br>Werkstudent zur Umsetzung individueller Kundenanforderungen in Java.<br><strong>eurodata AG, Saarbrücken</strong>",
+      workText: "Entwicklung von Sprachassistenzsystemen mit dem firmeneigenen Framework.<br><strong>Semvox GmbH, Saarbrücken</strong><br><br>Werkstudent in der Entwicklung von Microservices mit Java.<br><strong>DHC Business Solutions, Saarbrücken</strong><br><br>Werkstudent zur Umsetzung individueller Kundenanforderungen in Java.<br><strong>eurodata AG, Saarbrücken</strong>",
       education: "🎓 Studium",
       educationText: "Bachelor of Science in Kommunikationsinformatik<br><strong>HTW Saar, Saarbrücken</strong><br><br>Master of Science in Künstlicher Intelligenz<br><strong>Universität Beispiel, Berlin</strong>",
       languages: {
