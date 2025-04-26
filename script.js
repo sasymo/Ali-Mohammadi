@@ -54,13 +54,28 @@ document.addEventListener("DOMContentLoaded", function () {
       project4Text: "Automated the testing workflow for voice assistant components using GitHub Actions and Python test scripts. Improved development speed and consistency across multiple project branches.",
       // Skills section
       skills: "🛠️ Skills",
-      languages: "Languages",
+      programmingLanguages: "Languages",
       frameworks: "Frameworks",
       tools: "Tools",
       work: "💼 Work Experience",
       workText: "Designing voice assistant systems using the company’s proprietary framework and creating user-friendly experiences.<br><strong>Semvox GmbH, Saarbrücken</strong><br><br>Working student developing microservices in Java.<br><strong>DHC Business Solutions, Saarbrücken</strong><br><br>Working student writing Java code for individual customer requirements.<br><strong>eurodata AG, Saarbrücken</strong>",
       education: "🎓 Education",
       educationText: "Bachelor of Science in Communication and Computer Science<br><strong>HTW Saar, Saarbrücken</strong><br><br>Master of Science in Artificial Intelligence<br><strong>University of Example, Berlin</strong>",
+      languages: {
+        title: "🌍 Languages",
+        persian: {
+          title: "🇮🇷 Persian",
+          skill: "Native speaker"
+        },
+        german: {
+          title: "🇩🇪 German",
+          skill: "Proficient (B2)"
+        },
+        english: {
+          title: "🇬🇧 English",
+          skill: "Intermediate (B1)"
+        }
+      },
       contact: "🔗 Contact",
       github: "GitHub",
       linkedin: "LinkedIn",
@@ -86,13 +101,28 @@ document.addEventListener("DOMContentLoaded", function () {
       project4Text: "Automatisierte den Testworkflow für Sprachassistenten-Komponenten mit GitHub Actions und Python-Testskripten. Verbesserte die Entwicklungsgeschwindigkeit und Konsistenz über mehrere Projektzweige hinweg.",
       // Skills section
       skills: "🛠️ Fachliche Kenntnisse",
-      languages: "Sprachen",
+      programmingLanguages: "Sprachen",
       frameworks: "Frameworks",
       tools: "Werkzeuge",
       work: "💼 Berufserfahrung",
       workText: "Entwicklung von Sprachassistenzsystemen mit dem firmeneigenen Framework und Gestaltung benutzerfreundlicher Erlebnisse.<br><strong>Semvox GmbH, Saarbrücken</strong><br><br>Werkstudent in der Entwicklung von Microservices mit Java.<br><strong>DHC Business Solutions, Saarbrücken</strong><br><br>Werkstudent zur Umsetzung individueller Kundenanforderungen in Java.<br><strong>eurodata AG, Saarbrücken</strong>",
       education: "🎓 Studium",
       educationText: "Bachelor of Science in Kommunikationsinformatik<br><strong>HTW Saar, Saarbrücken</strong><br><br>Master of Science in Künstlicher Intelligenz<br><strong>Universität Beispiel, Berlin</strong>",
+      languages: {
+        title: "🌍 Sprachen",
+        persian: {
+          title: "🇮🇷 Persisch",
+          skill: "Muttersprachler"
+        },
+        german: {
+          title: "🇩🇪 Deutsch",
+          skill: "Fortgeschritten (B2)"
+        },
+        english: {
+          title: "🇬🇧 Englisch",
+          skill: "Mittelstufe (B1)"
+        }
+      },
       contact: "🔗 Kontakt",
       github: "GitHub",
       linkedin: "LinkedIn",
@@ -122,18 +152,34 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById('project4-text').innerHTML = translations[lang].project4Text;
     // Update Skills Section
     document.getElementById('skills-title').textContent = translations[lang].skills;
-    document.getElementById('languages-title').textContent = translations[lang].languages;
+    document.getElementById('programming-languages-title').textContent = translations[lang].programmingLanguages;
     document.getElementById('frameworks-title').textContent = translations[lang].frameworks;
     document.getElementById('tools-title').textContent = translations[lang].tools;
     document.getElementById('work-title').textContent = translations[lang].work;
     document.getElementById('work-text').innerHTML = translations[lang].workText;
     document.getElementById('education-title').textContent = translations[lang].education;
     document.getElementById('education-text').innerHTML = translations[lang].educationText;
+
+    // Languages
+    const languageData = translations[lang].languages;
+    document.getElementById('languages-title').textContent = languageData.title;
+
+    const languageIds = ['persian', 'german', 'english'];
+    
+    languageIds.forEach(language => {
+      document.getElementById(`${language}-title`).textContent = languageData[language].title;
+      document.getElementById(`${language}-skills`).innerHTML = `<li>${languageData[language].skill}</li>`;
+    });
+
     document.getElementById('contact-title').textContent = translations[lang].contact;
     document.getElementById('github-link').innerHTML = '<i class="fab fa-github"></i> ' + translations[lang].github;
     document.getElementById('linkedin-link').innerHTML = '<i class="fab fa-linkedin"></i> ' + translations[lang].linkedin;
     document.getElementById('email-link').innerHTML = '<i class="fas fa-envelope"></i> ' + translations[lang].email;
     document.getElementById('footer').innerHTML = translations[lang].footer;
+
+
+  console.log("Changing language to:", lang);
+  console.log("Found element:", document.getElementById('programming-languages-title'));
 
     // Change the resume download link based on language
     const resumeLink = document.getElementById('resume-link');
