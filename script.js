@@ -44,14 +44,16 @@ document.addEventListener("DOMContentLoaded", function () {
       professionalSummaryText: "I'm a software engineer with 2+ years of experience specializing in Java and voice assistance technologies. I currently work at SemVox GmbH, designing intelligent, user-friendly voice assistant systems using in-house frameworks. I also have experience in Python and enjoy creating back-end services that are simple, scalable, and easy to maintain.",
       // Projects section
       projectsTitle: "🏗️ Projects",
-      project1Title: "SmartVoice IVI System",
-      project1Text: "Led the development of a modular voice assistant for in-car infotainment systems at SemVox GmbH. Designed custom interaction flows and integrated context-aware dialogue handling using in-house Java frameworks.",
-      project2Title: "Personal Finance Assistant (Python, Flask)",
-      project2Text: "Built a lightweight back-end service to track expenses and provide spending insights via voice commands. Focused on clean API design, session handling, and deployment using Docker.",
-      project3Title: "TaskFlow – Voice-Controlled To-Do App",
-      project3Text: "Created a prototype app integrating a voice assistant with task management logic. Users could add, update, and query tasks hands-free. Used Spring Boot and a custom command parser.",
-      project4Title: "CI/CD Automation for Voice Assistant Testing",
-      project4Text: "Automated the testing workflow for voice assistant components using GitHub Actions and Python test scripts. Improved development speed and consistency across multiple project branches.",
+      project1Title: "In-Car Medical Voice Assistant",
+      project1Text: "Assisted to a driver monitoring system by implementing logic to evaluate vital sign data (e.g., heart rate, facial temperature) against medical history and predefined thresholds. Developed intelligent behavior within a Java-agent-based framework to trigger context-aware driving recommendations and promote road safety.",
+      project2Title: "Empathic In-Car Voice Assistant",
+      project2Text: "Worked on the development of an empathic in-car voice assistant that provided quick, voice-based answers from the entire car manual. The assistant used a camera to detect the driver’s facial expressions and automatically rephrased or enhanced responses (e.g., with images) if negative emotions were detected. Responsible for implementing key features, including the re-answering mechanism triggered by user dissatisfaction.",
+      project3Title: "Intent-to-Car Command Conversion",
+      project3Text: "Contributed to a project using Rasa and GPT models to identify user intents from voice commands. Developed the logic to convert recognized intents into executable car commands, and implemented the communication with the in-car server to transmit and trigger those commands within the vehicle system.",
+      project4Title: "Desktop Interface for GPT Integration",
+      project4Text: "Assisted in a project focused on integrating GPT-based language models into our software solution to enhance user interaction through natural language understanding. My primary responsibility was designing and implementing a desktop GUI using JavaFX, ensuring a responsive and user-friendly interface for interacting with the GPT integration.",
+      project5Title: "Integration of Rule-Based ML for Driver Emotion Detection",
+      project5Text: "Contributed to a machine learning project that generated rules to detect driver emotions based on data like car speed, road conditions, traffic, and weather. I integrated these rules into a Java-based AI framework, which used real-time sensor data to recognize when certain conditions were met and provided helpful suggestions to the driver based on their likely emotional state.",
       // Skills section
       skills: "🛠️ Skills",
       programmingLanguages: "Languages",
@@ -91,14 +93,16 @@ document.addEventListener("DOMContentLoaded", function () {
       professionalSummaryText: "Ich bin ein Softwareentwickler mit mehr als 2 Jahren Erfahrung in Java und Sprachassistenztechnologien. Zurzeit arbeite ich bei SemVox GmbH, entwickle intelligente, benutzerfreundliche Sprachassistenzsysteme mit firmeneigenen Frameworks. Ich habe auch Erfahrung in Python und freue mich, skalierbare und einfach zu wartende Backend-Dienste zu erstellen.",
       // Projects section
       projectsTitle: "🏗️ Projekte",
-      project1Title: "SmartVoice IVI System",
-      project1Text: "Leitete die Entwicklung eines modularen Sprachassistenten für Infotainmentsysteme im Auto bei SemVox GmbH. Entwarf benutzerdefinierte Interaktionsabläufe und integrierte kontextbewusste Dialogbehandlung unter Verwendung firmeneigener Java-Frameworks.",
-      project2Title: "Personal Finance Assistant (Python, Flask)",
-      project2Text: "Erstellte einen leichten Backend-Service zur Verfolgung von Ausgaben und zur Bereitstellung von Ausgabenanalysen per Sprachbefehlen. Fokus auf saubere API-Entwicklung, Sitzungsmanagement und Bereitstellung mit Docker.",
-      project3Title: "TaskFlow – Sprachgesteuerte To-Do-App",
-      project3Text: "Erstellte eine Prototyp-App, die einen Sprachassistenten mit Aufgabenmanagement-Logik integriert. Benutzer konnten Aufgaben freihändig hinzufügen, aktualisieren und abfragen. Verwendet wurden Spring Boot und ein benutzerdefinierter Befehlsparser.",
-      project4Title: "CI/CD-Automatisierung für Sprachassistenten-Tests",
-      project4Text: "Automatisierte den Testworkflow für Sprachassistenten-Komponenten mit GitHub Actions und Python-Testskripten. Verbesserte die Entwicklungsgeschwindigkeit und Konsistenz über mehrere Projektzweige hinweg.",
+      project1Title: "In-Car Medizinischer Sprachassistent",
+      project1Text: "Arbeitete an einem Fahrassistenzsystem, das Vitalwerte wie Herzfrequenz und Gesichtstemperatur überwacht. Entwickelte und implementierte Logik zur Analyse von Sensordaten in Kombination mit der medizinischen Historie des Fahrers. Nutze ein Java-Agenten-Framework, um sprachbasierte Sicherheitshinweise basierend auf Gesundheitszustand und Fahrbedingungen zu geben.",
+      project2Title: "Empathischer In-Car Sprachassistent",
+      project2Text: "Arbeitete an der Entwicklung eines empathischen In-Car Sprachassistenten, der schnelle, sprachbasierte Antworten aus dem gesamten Handbuch des Fahrzeugs lieferte. Der Assistent nutzte eine Kamera zur Erkennung der Gesichtsausdrücke des Fahrers und formulierte Antworten automatisch um oder ergänzte diese (z.B. mit Bildern), wenn negative Emotionen erkannt wurden. Verantwortlich für die Implementierung wichtiger Funktionen, einschließlich des Mechanismus für die erneute Beantwortung, der bei Unzufriedenheit des Nutzers ausgelöst wurde.",
+      project3Title: "Intent-zu-Fahrzeugbefehl Umsetzung",
+      project3Text: "Mitwirkung an einem Projekt, das Rasa- und GPT-Modelle zur Erkennung von Benutzerintentionen aus Sprachbefehlen nutzte. Entwickelte die Logik zur Umwandlung erkannter Intentionen in ausführbare Fahrzeugbefehle und implementierte die Kommunikation mit dem Fahrzeugsystem, um diese Befehle zu übertragen und auszuführen.",
+      project4Title: "Desktop-Oberfläche für GPT-Integration",
+      project4Text: "Mitgewirkt an einem Projekt zur Integration von GPT-basierten Sprachmodellen in unsere Softwarelösung, um die Benutzerinteraktion durch natürliche Sprachverarbeitung zu verbessern. Meine Hauptaufgabe bestand in der Gestaltung und Implementierung einer Desktop-GUI mit JavaFX, die eine reaktionsschnelle und benutzerfreundliche Schnittstelle zur GPT-Integration bietet.",
+      project5Title: "Integration regelbasierter ML zur Erkennung von Fahreremotionen",
+      project5Text: "Mitwirkung an einem Machine-Learning-Projekt, das Regeln zur Erkennung von Fahreremotionen auf Basis von Daten wie Fahrzeuggeschwindigkeit, Straßenverhältnissen, Verkehr und Wetter generierte. Ich integrierte diese Regeln in ein Java-basiertes KI-Framework, das Echtzeit-Sensordaten analysierte, um bestimmte Bedingungen zu erkennen und dem Fahrer darauf basierende hilfreiche Empfehlungen zu geben.",
       // Skills section
       skills: "🛠️ Fachliche Kenntnisse",
       programmingLanguages: "Sprachen",
@@ -150,6 +154,8 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById('project3-text').innerHTML = translations[lang].project3Text;
     document.getElementById('project4-title').textContent = translations[lang].project4Title;
     document.getElementById('project4-text').innerHTML = translations[lang].project4Text;
+    document.getElementById('project5-title').textContent = translations[lang].project5Title;
+    document.getElementById('project5-text').innerHTML = translations[lang].project5Text;
     // Update Skills Section
     document.getElementById('skills-title').textContent = translations[lang].skills;
     document.getElementById('programming-languages-title').textContent = translations[lang].programmingLanguages;
